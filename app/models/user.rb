@@ -1,3 +1,5 @@
+# rubocop:disable Lint/ShadowingOuterLocalVariable
+
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -36,3 +38,5 @@ class User < ApplicationRecord
     friends.include?(user)
   end
 end
+
+# rubocop:enable Lint/ShadowingOuterLocalVariable

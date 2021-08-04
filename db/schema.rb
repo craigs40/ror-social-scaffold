@@ -28,10 +28,14 @@ ActiveRecord::Schema.define(version: 2021_08_03_195546) do
   create_table "friendships", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "friend_id"
-    t.boolean "confirmed"
+    t.integer "sender_id"
+    t.integer "receiver_id"
+    t.boolean "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["friend_id"], name: "index_friendships_on_friend_id"
+    t.index ["receiver_id"], name: "index_friendships_on_receiver_id"
+    t.index ["sender_id"], name: "index_friendships_on_sender_id"
     t.index ["user_id"], name: "index_friendships_on_user_id"
   end
 

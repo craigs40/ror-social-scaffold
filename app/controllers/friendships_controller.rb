@@ -1,6 +1,4 @@
 class FriendshipsController < ApplicationController
-  before_action :set_friendship, only: %i[show edit update destroy]
-
   def index
     @friends = current_user.friends
     @friend_requests = current_user.friend_requests

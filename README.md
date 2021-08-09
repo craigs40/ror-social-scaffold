@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-TBA
+https://fast-shore-31222.herokuapp.com/
 
 
 ## Getting Started
@@ -71,7 +71,9 @@ TBA
 
 ## Authors
 
-TBA
+👤 **Shay Craig**
+
+- GitHub: [@craigs40](https://github.com/craigs40)
 
 ## 🤝 Contributing
 
@@ -85,9 +87,5 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
-
-## 📝 License
-
-TBA
-
+- Hat tip to anyone whose code was used
+- Special thanks to all TSEs involved in improving this project.

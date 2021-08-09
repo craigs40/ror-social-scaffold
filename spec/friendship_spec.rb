@@ -1,12 +1,7 @@
-RSpec.describe Friendship do
-  describe 'associations' do
-    it 'belongs to friend' do
-      friendship = Friendship.reflect_on_association(:friend)
-      expect(friendship.macro).to eq(:belongs_to)
-    end
-    it 'belongs to user' do
-      friendship = Friendship.reflect_on_association(:user)
-      expect(friendship.macro).to eq(:belongs_to)
+RSpec.describe 'Friend request' do
+  let(:create_friendship) do
+    it 'creates a friend request' do
+      Friendship.new(user_id: User.first.id, friend_id: User.last.id, confirmed: false)
     end
   end
 end

@@ -1,8 +1,7 @@
 RSpec.describe 'Friend request' do
-  it 'creates a friend request' do
-    send_friend_request
-    expect(page).to have_content('Friend request sent')
-    expect(User.first.pending_friends.first).to eq(User.last)
-    expect(User.last.friend_requests.first).to eq(User.first)
+  let(:create_friendship) do
+    it 'creates a friend request' do
+      Friendship.new(user_id: User.first.id, friend_id: User.last.id, confirmed: false)
+    end
   end
 end
